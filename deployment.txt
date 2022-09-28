@@ -19,15 +19,15 @@ Install heroku CLI via
   -brew tap heroku/brew &&brew install heroku
 
 
-Create app using
-  -heroku create <app-name>
-
-
 create a file name {Procfile} and type
   -web: node backend/server.js
 
 Go to package.json and put this line:-
   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+
+
+Create app using
+  -heroku create <app-name>
 
 Type this line in CMD to deploy
   -heroku git:remote -a yukieapp
