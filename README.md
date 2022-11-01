@@ -19,11 +19,12 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This website is similar to commonly available shopping apps like amazon, flipkart etc. In this website I have implemented all the required features like login, payment with PayPal and many more such features like this. 
+This website is similar to commonly available shopping apps like amazon, flipkart etc. In this website I have implemented all the required features like login, payment with PayPal and many more such features like this.
 
 I have also created some important notes on this you can check out from below :-
-- [Frontend notes](./info_front.txt)
-- [Backend notes](./info_back.txt)
+
+-   [Frontend notes](./frontend_notes.md)
+-   [Backend notes](./backend_notes.md)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -50,7 +51,7 @@ MONGO_URI = <Mongo uri>
 
 // Sample ID
 // AZwkJ1m9yGr_LibOMCvp_ZfHWpYHPH_MV2KaiMr1Wi4raUxMY8bV9ti-us4fb5_aGlMqdV17n78_Ckc1
-// Go to https://developer.paypal.com/ and create your app. 
+// Go to https://developer.paypal.com/ and create your app.
 // It will give you the PayPal ID, you need to paste this id here.
 PAYPAL_CLIENT_ID = <put your paypal ID>
 
@@ -66,7 +67,6 @@ PAYPAL_CLIENT_ID = <put your paypal ID>
 ---
 
 ---
-
 
 ### Installing and deploying on Heroku server
 
@@ -85,7 +85,7 @@ web: node backend/server.js
     && npm run build --prefix frontend"
 ```
 
--   Step 4 Add this code to the `backend/server.js` file.  Also avoid one of the common mistakes and do not put this on the top of the file. This code needs to be at the bottom so that all the env variables can load, otherwise website might not run.
+-   Step 4 Add this code to the `backend/server.js` file. Also avoid one of the common mistakes and do not put this on the top of the file. This code needs to be at the bottom so that all the env variables can load, otherwise website might not run.
 
 ```java
 if (process.env.NODE_ENV === 'production') {
