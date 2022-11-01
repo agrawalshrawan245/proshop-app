@@ -81,7 +81,7 @@ web: node backend/server.js
     && npm run build --prefix frontend"
 ```
 
--   Step 4 Add this code to the `backend/server.js` file.
+-   Step 4 Add this code to the `backend/server.js` file.  Also avoid one of the common mistakes and do not put this on the top of the file. This code needs to be at the bottom so that all the env variables can load, otherwise website might not run.
 
 ```java
 if (process.env.NODE_ENV === 'production') {
