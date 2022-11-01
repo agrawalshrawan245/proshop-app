@@ -55,6 +55,13 @@ PAYPAL_CLIENT_ID = <put your paypal ID>
 -   Step 7 Initially there will be no data so you can import sample data using command `node backend/seeder`.
 -   Step 6 Your website will start running now, you can check `http://localhost:3000/`.
 
+---
+
+---
+
+---
+
+
 ### Installing and deploying on Heroku server
 
 -   Step 1 Install Heroku CLI for windows/ ubuntu.
