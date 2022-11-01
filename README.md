@@ -31,7 +31,7 @@ Here is the step by step guide on how to install and deploy this website on you 
 
 -   Step 1 Install nodejs 14 or higher (Recomended 14).
 -   Step 2 Clone this repository.
--   Step 3 create a `.env` file and put these environment variables
+-   Step 3 create a `.env` file in root and put these environment variables
 
 ```java
 PORT = 5000
@@ -54,7 +54,7 @@ PAYPAL_CLIENT_ID = <put your paypal ID>
 
 -   Step 4 Go to root folder and use the command `npm install`.
 -   Step 5 Go to frontend folder `cd frontend` and use the command `npm install`.
--   Step 7 Initially there will be no data so you can import sample data using command `node backend/seeder`.
+-   Step 7 Initially there will be no data so you can import sample data using command `node backend/seeder` in root folder.
 -   Step 6 Your website will start running now, you can check `http://localhost:3000/`.
 
 ---
@@ -68,20 +68,20 @@ PAYPAL_CLIENT_ID = <put your paypal ID>
 
 -   Step 1 Install Heroku CLI for windows/ ubuntu.
 
--   Step 2 Create a file and name `Procfile` and the content should be :-
+-   Step 2 Create a file and name `Procfile` in root folder and the content should be :-
 
 ```
 web: node backend/server.js
 ```
 
--   Step 3 Paste the heroku-postbuild script in package.json file
+-   Step 3 Paste the heroku-postbuild script in root/package.json file
 
 ```json
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend
     && npm run build --prefix frontend"
 ```
 
--   Step 4 Add this code to the `server.js` file.
+-   Step 4 Add this code to the `backend/server.js` file.
 
 ```java
 if (process.env.NODE_ENV === 'production') {
@@ -97,7 +97,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 ```
 
--   Step 4 Go to command line and write
+-   Step 4 Go to command line and write in root folder
 
 ```bash
 $ heroku login
@@ -106,7 +106,7 @@ $ heroku git:remote -a <you-unique-app-name>
 $ git push heroku master
 ```
 
--   Step 5 Add the `.env` file elements to the heroku.
+-   Step 5 Add the `.env` file elements to the heroku in root folder.
 -   Step 6 Your app is workin now.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
