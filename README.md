@@ -40,12 +40,14 @@ NODE_ENV = <development>/<production>
 
 // Create a mongoDB URI and paste it here.
 // Sample URI
-// MONGO_URI = mongodb+srv://<username>:<password>@cluster0.0vxdnkg.mongodb.net/test?retryWrites=true&w=majority
+// MONGO_URI = mongodb+srv://<username>:<password>@cluster0.0vxdnkg.mongodb.net/
+// test?retryWrites=true&w=majority
 MONGO_URI = <Mongo uri>
 
 // Sample ID
 // AZwkJ1m9yGr_LibOMCvp_ZfHWpYHPH_MV2KaiMr1Wi4raUxMY8bV9ti-us4fb5_aGlMqdV17n78_Ckc1
-// Go to https://developer.paypal.com/ and create your app. It will give you the PayPal ID, you need to paste this id here.
+// Go to https://developer.paypal.com/ and create your app. 
+// It will give you the PayPal ID, you need to paste this id here.
 PAYPAL_CLIENT_ID = <put your paypal ID>
 
 ```
@@ -75,7 +77,8 @@ web: node backend/server.js
 -   Step 3 Paste the heroku-postbuild script in package.json file
 
 ```json
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend
+    && npm run build --prefix frontend"
 ```
 
 -   Step 4 Add this code to the `server.js` file.
