@@ -25,6 +25,7 @@ I have also created some important notes on this you can check out from below :-
 
 -   [Frontend notes](./uploads/frontend_notes.md)
 -   [Backend notes](./uploads/backend_notes.md)
+-   [Deployment](./uploads/deployment.md)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
