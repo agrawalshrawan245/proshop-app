@@ -23,8 +23,8 @@ This website is similar to commonly available shopping apps like amazon, flipkar
 
 I have also created some important notes on this you can check out from below :-
 
--   [Frontend notes](./frontend_notes.md)
--   [Backend notes](./backend_notes.md)
+-   [Frontend notes](./uploads/frontend_notes.md)
+-   [Backend notes](./uploads/backend_notes.md)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
