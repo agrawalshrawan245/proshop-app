@@ -19,7 +19,11 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This website is similar to commonly available shopping apps like amazon, flipkart etc. In this website I have implemented all the required features like login, payment with PayPal and many more such features like this.
+This website is similar to commonly available shopping apps like amazon, flipkart etc. In this website I have implemented all the required features like login, payment with PayPal and many more such features like this. 
+
+I have also created some important notes on this you can check out from below :-
+- [Frontend notes](./info_front.txt)
+- [Backend notes](./info_back.txt)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -55,7 +59,7 @@ PAYPAL_CLIENT_ID = <put your paypal ID>
 -   Step 4 Go to root folder and use the command `npm install`.
 -   Step 5 Go to frontend folder `cd frontend` and use the command `npm install`.
 -   Step 7 Initially there will be no data so you can import sample data using command `node backend/seeder` in root folder.
--   Step 6 Your website will start running now, you can check `http://localhost:3000/`.
+-   Step 8 Your website will start running now, you can check `http://localhost:3000/`.
 
 ---
 
@@ -97,7 +101,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 ```
 
--   Step 4 Go to command line and write in root folder
+-   Step 5 Go to command line and write in root folder
 
 ```bash
 $ heroku login
@@ -106,8 +110,8 @@ $ heroku git:remote -a <you-unique-app-name>
 $ git push heroku master
 ```
 
--   Step 5 Add the `.env` file elements to the heroku in root folder.
--   Step 6 Your app is workin now.
+-   Step 6 Add the `.env` file elements to the heroku in root folder.
+-   Step 7 Your app is workin now.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
