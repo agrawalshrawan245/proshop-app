@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://proshopeeapp.herokuapp.com/" rel="noopener">
- <img src="./frontend/public/images/final.png" alt="Project logo"></a>
+ <img style="border-radius:20px;" src="./frontend/public/images/final.png" alt="Project logo"></a>
 </p>
 
 <h1 align="center"> <a href="https://proshopeeapp.herokuapp.com/"> PROSHOP SHOPPING APP </a> </h1>
